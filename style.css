@@ -13,7 +13,6 @@
     --cor-fonte: #fff;
     --cor-fonte-p: #555;
     --cor-btn: #563434;
-    --cor-btn-hover: #15ff00;
     --cor-btn-fonte: #000;
     --cor-fonte-corpo: #555;
     --cor-fonte-corpo-leve: #777;
@@ -41,6 +40,22 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
+}
+
+.navbar .carrinho {
+    width: 38.5px;
+    height: 38px;
+    background: var(--cor-padrao);
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px var(--cor-padrao);
+}
+
+.navbar .menu-mobile {
+    background: var(--cor-fonte);
+    padding: 5px;
+    border-radius: 12px;
+    width: 35px;
 }
 
 nav {
@@ -123,9 +138,9 @@ div.linha {
 }
 
 .btn:hover {
-    box-shadow: 0px 0px 8px var(--cor-btn-hover);
-    background: var(--cor-btn-hover);
-    color: var(--cor-fonte-btn);
+    box-shadow: 0px 0px 12px var(--cor-padrao);
+    background: var(--cor-padrao-hover);
+    color: var(--cor-btn-fonte);
 }
 
 .categorias {
@@ -318,7 +333,7 @@ small {
 }
 
 .rodape-col-2 img {
-    width: 120px;
+    width: 100px;
     margin-bottom: 20px;
 }
 
@@ -353,7 +368,7 @@ small {
         position: absolute;
         top: 70px;
         left: 0;
-        background: var(--cor-btn-fonte);
+        background: rgba(0, 0, 0, 0.897);
         width: 100%;
         overflow: hidden;
         transition: max-height 0.3s;
@@ -376,10 +391,9 @@ small {
     nav ul li:hover {
         display: block;
         transform: scale(1);
-        background: var(--cor-padrao-hover);
+        background: var(--cor-padrao);
     }
     nav ul li a:hover {
-        color: var(--cor-btn-fonte);
         font-weight: 500;
     }
 
